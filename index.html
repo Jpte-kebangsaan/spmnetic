@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPM Video Hub | Fokus & Belajar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">SPM<span>HUB</span></div>
+            <ul>
+                <li><a href="#">Utama</a></li>
+                <li><a href="#subjek">Subjek</a></li>
+                <li><a href="#">Nota</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Belajar Tanpa Gangguan.</h1>
+            <p>Koleksi video tutorial terbaik untuk persediaan SPM anda.</p>
+        </div>
+    </header>
+
+    <section id="subjek" class="container">
+        <h2 class="section-title">Pilih Subjek Anda</h2>
+        <div class="subject-grid">
+            
+            <div class="card" onclick="openVideo('https://www.youtube.com/embed/dQw4w9WgXcQ', 'Sejarah SPM: Bab 1')">
+                <div class="card-icon">📚</div>
+                <h3>Sejarah</h3>
+                <p>Nota Padat & Teknik Menjawab</p>
+                <button>Tonton</button>
+            </div>
+
+            <div class="card" onclick="openVideo('https://www.youtube.com/embed/example2', 'AddMath: Pembezaan')">
+                <div class="card-icon">🧮</div>
+                <h3>AddMath</h3>
+                <p>Latihan Intensif Kertas 2</p>
+                <button>Tonton</button>
+            </div>
+
+            <div class="card" onclick="openVideo('https://www.youtube.com/embed/example3', 'Bahasa Melayu: Karangan')">
+                <div class="card-icon">✍️</div>
+                <h3>Bahasa Melayu</h3>
+                <p>Tips Karangan A+</p>
+                <button>Tonton</button>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideo()">&times;</span>
+            <h2 id="videoTitle">Tajuk Video</h2>
+            <div class="video-container">
+                <iframe id="mainVideo" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Dibangunkan oleh AN - Pendidikan Digital Perlis</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
